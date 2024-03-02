@@ -1,49 +1,24 @@
-import java.util.Scanner;
+// Java Program to Convert Integer Values into Binary
 
-public class test {
-	
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-        int EvenSum = 0;
-		int OddSum =0;
-        int last=0;
-		int n = sc.nextInt();
+// Importing Classes/Files
+import java.io.*;
 
+class test {
+	// Function converting decimal to binary
+	static void decimalToBinary(long num)
+	{
+		// Function to print integer to binary using
+		// inbuilt toBinaryString method
+		System.out.println(Long.toBinaryString(num));
+	}
 
-		
-			
-		
-        while (n>0){
-		 last = n%10;
-         //System.out.println((last));
-         n=n/10;
-         //System.out.println((n));
-        
-        if (last %2==0){
-            EvenSum+=last;
-        }
+	// Main driver function
+	public static void main(String[] args)
+	{
+		// Number to be converted into binary
+		long num = 12;
 
-        else if (last %2!=0){
-            OddSum+=last;
-        }
-         
-    }
-		// if (last%2 == 0){
-		// 	EvenSum+=last;
-		// }
-
-		// else if (last%2 != 0){
-		// 	OddSum+=last;
-		// }
-	
-	
-
-		System.out.print(""+EvenSum+""+OddSum);
-        
-		
-        }
-
-	
-        }
-
-    
+		// Calling function
+		decimalToBinary(num);
+	}
+}
