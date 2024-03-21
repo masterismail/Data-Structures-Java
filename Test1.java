@@ -1,18 +1,16 @@
-public class Test1 {
-    public static int[] printNos(int x) {
-       int[] resultArray = new int[x+1];
-        
-        if (x > 0) {
-            resultArray[x]=x;
-            printNos(x - 1);
-             // Recursively call printNos with x-1
-            // System.out.print(x); // Print the current value of x
-        }
-      
-        return resultArray;
-    }
+import java.util.*;
 
-    public static void main(String[] args) {
-        printNos(5);
+public class Test1 {
+    public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+     int inputNumber = sc.nextInt();
+     int rem;
+     int sum=0;
+     while(inputNumber > 0) {
+        rem = inputNumber%10;
+        sum = sum+rem;
+        inputNumber = inputNumber/10;
     }
+    System.out.println(sum);
+}
 }

@@ -1,17 +1,23 @@
+
 import java.util.*;
-public class Test {
-	public static void main(String[] args){
+
+public class Test{
+	public static void main(String[] arg) {
 		Scanner sc = new Scanner(System.in);
-		int n,m;
-		n=sc.nextInt(); 
-		if (n>70) {
-			System.out.println("First class");
-		}  else if (n<70 && n>60) {
-			System.out.print("second hai yaro");
-		} else{
-			System.out.println("last hai baigan");
+		int number1 = sc.nextInt();
+		int count = 0;
+		
+		for(int i=1;i<=number1;i++) {
+		  if (number1%i==0) {r
+			count++;
 		}
+		}
+		
+		if (count == 2) {
+			System.out.print("prime");
+		}
+			else {
+				System.out.print("not primt");
+			}
 		}
 	}
-
-

@@ -1,22 +1,17 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Solution {
-    public static int[] printNos(int x) {
-       int staticNumber = 1;
-       int[] resultList = new int[x];
-        
-        printNos(x);
-        
-        resultList[staticNumber-1] = staticNumber;
-        staticNumber++; 
-        
-    
-    for (int num:resultList){
-        System.out.print(num + "");
-    }
-        return resultList;
+    public static void printNtimes(int n, List<String> list) {
+        if (n > 0) {
+            printNtimes(n - 1, list); // Recursively call printNtimes with n-1
+            list.add("Coding Ninjas"); // Add "Coding Ninjas" to the list
+        }
     }
 
-
-    public static void main(String[] args){
-        printNos(5);
+    public static void main(String[] args) {
+        List<String> list = new ArrayList<String>(); // Initialize list here
+        printNtimes(5, list);
+        System.out.println(list); // Print the list
     }
 }
