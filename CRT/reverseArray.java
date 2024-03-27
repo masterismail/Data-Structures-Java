@@ -1,8 +1,8 @@
 import java.util.*;
 
-public class Test{
+public class reverseArray{
 
-    public static void reverseArray(int[] array){
+    public static void reverseArrayy(int[] array){
       
     //  for(int num:array) { 
 	// 	System.out.print(num + " ");  
@@ -28,7 +28,7 @@ public class Test{
 		System.out.println("\nEnter elements of the array:");
 		for (int i=0; i<n; i++)  
             newArray[i] = sc.nextInt();
-		reverseArray(newArray);
+		reverseArrayy(newArray);
 }
 }
 
